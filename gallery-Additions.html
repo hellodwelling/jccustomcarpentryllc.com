@@ -222,6 +222,7 @@
             <h2  style= "color:#822f29" class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Additions</h2>
             <h2  style= "color:#c5a171" class="my-3 mb-10 text-xl font-medium  text-gray-400  text-center">Our Best Work</h2>
             <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [  ] }" @keydown.escape= "open = false"   >
+                <!-- <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [  ] }" @keydown.escape= "open = false"   > -->
                  
                                     
         
@@ -257,7 +258,7 @@
                                     </template>
                                     
                                     <template x-if="slide[1] != 'photo'  ">
-                                        <video class="object-contain max-w-full max-h-full rounded shadow-lg"  controls> <source :src="slide[0]" >
+                                        <video class="object-cover max-w-full max-h-full rounded shadow-lg"  controls> <source :src="slide[0]" >
                                         </video>
                                     </template> 
                                     
@@ -329,6 +330,7 @@
                 
                 <li> <a  style= "color:#c5a171"  href="#find-us" class=" px-2 md:px-4 text-gray-400 hover:text-white">Service Areas</a></li>
                 
+                <li> <a  style= "color:#c5a171"  href='sitemap.xml' class=" px-2 md:px-4 text-gray-400 hover:text-white">Sitemap</a></li>
             </ul>
         </div>
     </div>
